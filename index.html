@@ -77,5 +77,15 @@
         </button>
       </form>
     </section>
+    <script>
+    const form = document.querySelector("form");
+      form.addEventListener("submit", (e) => {
+        setTimeout(() => {
+          window.history.back();
+          form.reset();
+        }, 1000);
+      });
+
+    </script>
   </body>
 </html>
